@@ -33,9 +33,10 @@ p {
 
 .name_font {
   font-family: 'Reenie Beanie', cursive;
-  font-size: 65px;
+  font-size: 85px;
   color: #88BA75;
   position: relative;
+  padding: 8px;
 }
 
 .phrase_font {
