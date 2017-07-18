@@ -10,6 +10,8 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   <link type="text/css" rel="stylesheet" href="css_landing_page.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/typed.js" type="text/javascript"></script>
 
 </head>
 
@@ -18,11 +20,13 @@
   <div id="menu">☰</div>
 
   <div class="container">
-    <p class="phrase_font">
-      <em><i>Under construction since 7.9.17</i></em>
-    </p>
 
-    <span class="greeting_font">Hello, I'm </span> <span class="name_font"> Jia</span>
+    <div id="typed-strings" class="typed-cursor">
+      <span class="greeting_font">Hello, I'm a curious CS student</span>
+      <span class="greeting_font">Hello, I'm an engineer-in-progress</span>
+      <span class="name_font"> Hello, I'm Jia</span>
+    </div>
+    <span id="typed" class="greeting_font"></span>
     <br>
     <br>
     <hr color="white" size="1">
@@ -45,6 +49,19 @@
 
 
   </div>
+
+  <script>
+    var typed = new Typed('#typed', {
+      stringsElement: '#typed-strings',
+      showCursor: true,
+      cursorChar: '|',
+      autoInsertCss: true,
+      typeSpeed: 150,
+      backSpeed: 200,
+      smartBackspace: true,
+      backDelay: 1000
+    });
+  </script>
 
 </body>
 
