@@ -17,48 +17,65 @@
 
 <body>
 
-  <div id="menu">☰</div>
+  <span id="menu" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 
-  <div class="container">
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="./About/about.html">about me</a>
+    <a href="./Projects/projects.html">projects</a>
+    <a href="https://drive.google.com/file/d/0ByD4fleMobp4cWhHUHBGYktPYlk/view">resume</a>
+  </div>
 
-    <div id="typed-strings" class="typed-cursor">
-      <span>Hello, I'm a curious CS student</span>
-      <span>Hello, I'm an engineer-in-progress</span>
-      <span> Hello, I'm Jia</span>
+  <span onclick="openNav()"></span>
+
+    <div class="container">
+
+      <div id="typed-strings" class="typed-cursor">
+        <span>Hello, I'm a curious CS student</span>
+        <span>Hello, I'm an engineer-in-progress</span>
+        <span> Hello, I'm Jia</span>
+      </div>
+      <span id="typed" class="greeting_font"></span>
+      <br>
+      <br>
+      <br>
+      <br>
+      <ul class="centerUL">
+        <li><a href="https://www.facebook.com/kim.jia.a"><i class="fa fa-facebook btn btn-social-icon btn-facebook btn-xl"></i></a></li>
+        <li><a href="https://github.com/jiakim"><i class="fa fa-github btn btn-social-icon btn-github btn-xl"></i></a></li>
+        <li><a href="mailto:jak9@rice.edu"><i class="fa fa-envelope btn-xl"></i></a></li>
+      </ul>
+      <br>
+
+
     </div>
-    <span id="typed" class="greeting_font"></span>
-    <br>
-    <br>
-    <br>
-    <br>
-    <ul class="centerUL">
-      <li><a href="https://www.facebook.com/kim.jia.a"><i class="fa fa-facebook btn btn-social-icon btn-facebook btn-xl"></i></a></li>
-      <li><a href="https://github.com/jiakim"><i class="fa fa-github btn btn-social-icon btn-github btn-xl"></i></a></li>
-      <li><a href="mailto:jak9@rice.edu"><i class="fa fa-envelope btn-xl"></i></a></li>
-    </ul>
-    <br>
 
-    <ul class="centerUL">
-      <li><a href="./About/about.html" class="words">about</a></li>
-      <li><a href="https://google.com" class="words">projects</a></li>
-      <li><a href="https://drive.google.com/file/d/0ByD4fleMobp4cWhHUHBGYktPYlk/view" class="words">resume</a></li>
-    </ul>
+    <script>
+      var typed = new Typed('#typed', {
+        stringsElement: '#typed-strings',
+        showCursor: true,
+        cursorChar: '|',
+        autoInsertCss: true,
+        typeSpeed: 100,
+        backSpeed: 100,
+        smartBackspace: true,
+        backDelay: 1000
+      });
+
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginRight = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginRight = "0";
+      }
+    </script>
+
 
 
   </div>
-
-  <script>
-    var typed = new Typed('#typed', {
-      stringsElement: '#typed-strings',
-      showCursor: true,
-      cursorChar: '|',
-      autoInsertCss: true,
-      typeSpeed: 150,
-      backSpeed: 100,
-      smartBackspace: true,
-      backDelay: 1000
-    });
-  </script>
 
 </body>
 
