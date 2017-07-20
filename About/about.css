@@ -11,6 +11,10 @@ body {
 
 p {
   font-size: 22px;
+  font-weight: 100;
+  text-align: center;
+  position: relative;
+  flex: 30;
 }
 
 .container {
