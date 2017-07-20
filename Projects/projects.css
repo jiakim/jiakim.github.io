@@ -1,0 +1,40 @@
+@import url(//fonts.googleapis.com/css?family=Lato:100,300);
+
+body {
+  background-color: #B8D4AE;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  height: 100%;
+}
+
+p {
+  font-size: 22px;
+  font-weight: 100;
+  text-align: center;
+  position: relative;
+  flex: 30;
+}
+
+.container {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(50%);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#menu {
+  color: white;
+  position: absolute;
+  margin-top: 3%;
+  margin-left: 92%;
+}
+
+.wrapper {
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+  }
