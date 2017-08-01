@@ -21,7 +21,7 @@ p {
   text-align: center;
   position: relative;
   top: 50%;
-  transform: translateY(50%);
+  transform: translateY(6%);
   margin-left: auto;
   margin-right: auto;
 }
@@ -51,6 +51,12 @@ p {
 	width: 30%;
 	margin-left: 35%;
 	margin-bottom: 5%;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    padding-top: 150px;
 }
 
  .sidenav {
