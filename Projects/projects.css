@@ -1,7 +1,7 @@
 @import url(//fonts.googleapis.com/css?family=Lato:100,300);
 
 body {
-  background-color: #B8D4AE;
+  background-color: #EACDCF;
   background-size: cover;
   background-position: center;
   color: white;
@@ -92,9 +92,9 @@ p {
 
 .columnheader > h1 {
  font-size: 150%;
- font-weight: 300;
+ font-weight: 100;
  padding: 5px;
- border-bottom: 2px solid #DEDEDE;
+ border-bottom: 2px solid #ffffff;
  width: 30%;
  margin-left: 35%;
  margin-bottom: 5%;
