@@ -56,14 +56,12 @@ ul li {
 }
 
 ul li a i {
-  transition: all 0.2s;
-  background-size: cover;ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 ul li a i:hover {
   opacity: .5;
 }
-
 
 #menu {
   color: white;
