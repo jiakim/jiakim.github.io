@@ -70,7 +70,7 @@ ul li a i:hover {
   right: 20px;
 }
 
-.typed-cursor {
+.typed-cursor{
    font-size: 60px;
    opacity: 1;
    -webkit-animation: blink 0.7s infinite;
